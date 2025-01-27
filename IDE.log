@@ -17088,3 +17088,1353 @@ con
 
 19:10:15 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_slideshow_system\_ide\scripts\debugger_slideshow-default.tcl'
 19:19:16 INFO  : Disconnected from the channel tcfchan#106.
+19:30:05 DEBUG : Logs will be stored at 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/IDE.log'.
+19:30:05 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\temp_xsdb_launch_script.tcl
+19:30:07 INFO  : Registering command handlers for Vitis TCF services
+19:30:08 INFO  : XSCT server has started successfully.
+19:30:08 INFO  : plnx-install-location is set to ''
+19:30:08 INFO  : Platform repository initialization has completed.
+19:30:10 INFO  : Successfully done setting XSCT server connection channel  
+19:30:10 INFO  : Successfully done query RDI_DATADIR 
+19:30:10 INFO  : Successfully done setting workspace for the tool. 
+19:55:03 INFO  : Result from executing command 'removePlatformRepo': 
+19:55:20 INFO  : Result from executing command 'getProjects': tangerineZ7_20_wrapper;tangerineZ7_20_wrapper_ethernet
+19:55:20 INFO  : Result from executing command 'getPlatforms': tangerineZ7_20_wrapper_ethernet|C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper_ethernet/export/tangerineZ7_20_wrapper_ethernet/tangerineZ7_20_wrapper_ethernet.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+19:55:21 INFO  : Checking for BSP changes to sync application flags for project 'slideshow'...
+19:55:40 INFO  : Checking for BSP changes to sync application flags for project 'slideshow'...
+19:55:45 INFO  : Checking for BSP changes to sync application flags for project 'slideshow'...
+19:55:59 INFO  : Result from executing command 'removePlatformRepo': 
+19:56:15 INFO  : Result from executing command 'getProjects': tangerineZ7_20_wrapper;tangerineZ7_20_wrapper_ethernet
+19:56:15 INFO  : Result from executing command 'getPlatforms': tangerineZ7_20_wrapper_ethernet|C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper_ethernet/export/tangerineZ7_20_wrapper_ethernet/tangerineZ7_20_wrapper_ethernet.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+19:56:16 INFO  : Checking for BSP changes to sync application flags for project 'slideshow'...
+19:56:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:56:38 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+19:56:38 INFO  : 'jtag frequency' command is executed.
+19:56:38 INFO  : Context for 'APU' is selected.
+19:56:38 INFO  : System reset is completed.
+19:56:41 INFO  : 'after 3000' command is executed.
+19:56:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+19:56:53 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+19:56:53 INFO  : Context for 'APU' is selected.
+19:56:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+19:56:53 INFO  : 'configparams force-mem-access 1' command is executed.
+19:56:53 INFO  : Context for 'APU' is selected.
+19:56:53 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl' is done.
+19:56:53 INFO  : 'ps7_init' command is executed.
+19:56:53 INFO  : 'ps7_post_config' command is executed.
+19:56:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:56:57 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:56:57 INFO  : 'configparams force-mem-access 0' command is executed.
+19:56:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:56:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:56:57 INFO  : 'con' command is executed.
+19:56:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:56:57 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_slideshow_system\_ide\scripts\debugger_slideshow-default.tcl'
+20:03:02 INFO  : Checking for BSP changes to sync application flags for project 'mp3Player'...
+20:03:18 INFO  : Disconnected from the channel tcfchan#8.
+20:03:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:03:20 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+20:03:20 INFO  : 'jtag frequency' command is executed.
+20:03:20 INFO  : Context for 'APU' is selected.
+20:03:20 INFO  : System reset is completed.
+20:03:23 INFO  : 'after 3000' command is executed.
+20:03:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+20:03:34 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/mp3Player/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+20:03:34 INFO  : Context for 'APU' is selected.
+20:03:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+20:03:34 INFO  : 'configparams force-mem-access 1' command is executed.
+20:03:34 INFO  : Context for 'APU' is selected.
+20:03:34 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/mp3Player/_ide/psinit/ps7_init.tcl' is done.
+20:03:35 INFO  : 'ps7_init' command is executed.
+20:03:35 INFO  : 'ps7_post_config' command is executed.
+20:03:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:03:39 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/mp3Player/Debug/mp3Player.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:03:39 INFO  : 'configparams force-mem-access 0' command is executed.
+20:03:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/mp3Player/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/mp3Player/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/mp3Player/Debug/mp3Player.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:03:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:03:39 INFO  : 'con' command is executed.
+20:03:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:03:39 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_mp3Player_system\_ide\scripts\debugger_mp3player-default.tcl'
+20:10:01 INFO  : Disconnected from the channel tcfchan#10.
+20:10:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:10:02 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+20:10:02 INFO  : 'jtag frequency' command is executed.
+20:10:02 INFO  : Context for 'APU' is selected.
+20:10:02 INFO  : System reset is completed.
+20:10:05 INFO  : 'after 3000' command is executed.
+20:10:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+20:10:17 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/mp3Player/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+20:10:17 INFO  : Context for 'APU' is selected.
+20:10:17 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+20:10:17 INFO  : 'configparams force-mem-access 1' command is executed.
+20:10:17 INFO  : Context for 'APU' is selected.
+20:10:17 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/mp3Player/_ide/psinit/ps7_init.tcl' is done.
+20:10:17 INFO  : 'ps7_init' command is executed.
+20:10:17 INFO  : 'ps7_post_config' command is executed.
+20:10:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:10:21 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/mp3Player/Debug/mp3Player.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:10:21 INFO  : 'configparams force-mem-access 0' command is executed.
+20:10:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/mp3Player/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/mp3Player/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/mp3Player/Debug/mp3Player.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:10:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:10:21 INFO  : 'con' command is executed.
+20:10:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:10:21 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_mp3Player_system\_ide\scripts\debugger_mp3player-default.tcl'
+20:13:54 INFO  : Disconnected from the channel tcfchan#11.
+20:13:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:13:55 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+20:13:55 INFO  : 'jtag frequency' command is executed.
+20:13:56 INFO  : Context for 'APU' is selected.
+20:13:56 INFO  : System reset is completed.
+20:13:59 INFO  : 'after 3000' command is executed.
+20:13:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+20:14:10 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+20:14:10 INFO  : Context for 'APU' is selected.
+20:14:10 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+20:14:10 INFO  : 'configparams force-mem-access 1' command is executed.
+20:14:10 INFO  : Context for 'APU' is selected.
+20:14:10 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl' is done.
+20:14:11 INFO  : 'ps7_init' command is executed.
+20:14:11 INFO  : 'ps7_post_config' command is executed.
+20:14:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:14:14 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:14:14 INFO  : 'configparams force-mem-access 0' command is executed.
+20:14:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:14:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:14:15 INFO  : 'con' command is executed.
+20:14:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:14:15 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_slideshow_system\_ide\scripts\debugger_slideshow-default.tcl'
+21:00:39 INFO  : Disconnected from the channel tcfchan#12.
+21:00:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:00:40 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+21:00:40 INFO  : 'jtag frequency' command is executed.
+21:00:42 INFO  : Context for 'APU' is selected.
+21:00:42 INFO  : System reset is completed.
+21:00:45 INFO  : 'after 3000' command is executed.
+21:00:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+21:00:56 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+21:00:57 INFO  : Context for 'APU' is selected.
+21:00:57 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+21:00:57 INFO  : 'configparams force-mem-access 1' command is executed.
+21:00:57 INFO  : Context for 'APU' is selected.
+21:00:57 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl' is done.
+21:00:57 INFO  : 'ps7_init' command is executed.
+21:00:57 INFO  : 'ps7_post_config' command is executed.
+21:00:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:01:00 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:01:00 INFO  : 'configparams force-mem-access 0' command is executed.
+21:01:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:01:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:01:01 INFO  : 'con' command is executed.
+21:01:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:01:01 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_slideshow_system\_ide\scripts\debugger_slideshow-default.tcl'
+21:03:16 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:04:33 INFO  : Result from executing command 'removePlatformRepo': 
+21:04:54 INFO  : Result from executing command 'getProjects': tangerineZ7_20_wrapper;tangerineZ7_20_wrapper_ethernet
+21:04:54 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+21:04:55 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:07:05 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:09:04 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:10:45 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:10:55 INFO  : Disconnected from the channel tcfchan#13.
+21:10:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:10:56 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+21:10:56 INFO  : 'jtag frequency' command is executed.
+21:10:57 INFO  : Context for 'APU' is selected.
+21:10:57 INFO  : System reset is completed.
+21:11:00 INFO  : 'after 3000' command is executed.
+21:11:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+21:11:12 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+21:11:12 INFO  : Context for 'APU' is selected.
+21:11:12 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+21:11:12 INFO  : 'configparams force-mem-access 1' command is executed.
+21:11:12 INFO  : Context for 'APU' is selected.
+21:11:12 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl' is done.
+21:11:12 INFO  : 'ps7_init' command is executed.
+21:11:12 INFO  : 'ps7_post_config' command is executed.
+21:11:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:11:15 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:11:15 INFO  : 'configparams force-mem-access 0' command is executed.
+21:11:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:11:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:11:16 INFO  : 'con' command is executed.
+21:11:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:11:16 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_doom_system\_ide\scripts\debugger_doom-default.tcl'
+21:11:49 INFO  : Checking for BSP changes to sync application flags for project 'fractal'...
+21:12:07 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:12:17 INFO  : Disconnected from the channel tcfchan#20.
+21:12:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:12:18 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+21:12:18 INFO  : 'jtag frequency' command is executed.
+21:12:20 INFO  : Context for 'APU' is selected.
+21:12:21 INFO  : System reset is completed.
+21:12:24 INFO  : 'after 3000' command is executed.
+21:12:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+21:12:35 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+21:12:35 INFO  : Context for 'APU' is selected.
+21:12:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+21:12:35 INFO  : 'configparams force-mem-access 1' command is executed.
+21:12:35 INFO  : Context for 'APU' is selected.
+21:12:35 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl' is done.
+21:12:36 INFO  : 'ps7_init' command is executed.
+21:12:36 INFO  : 'ps7_post_config' command is executed.
+21:12:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:12:39 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:12:39 INFO  : 'configparams force-mem-access 0' command is executed.
+21:12:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:12:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:12:39 INFO  : 'con' command is executed.
+21:12:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:12:39 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_doom_system\_ide\scripts\debugger_doom-default.tcl'
+21:13:53 INFO  : Checking for BSP changes to sync application flags for project 'fractal'...
+21:14:04 INFO  : Disconnected from the channel tcfchan#23.
+21:14:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:14:05 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+21:14:05 INFO  : 'jtag frequency' command is executed.
+21:14:06 INFO  : Context for 'APU' is selected.
+21:14:06 INFO  : System reset is completed.
+21:14:09 INFO  : 'after 3000' command is executed.
+21:14:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+21:14:20 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/fractal/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+21:14:20 INFO  : Context for 'APU' is selected.
+21:14:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+21:14:20 INFO  : 'configparams force-mem-access 1' command is executed.
+21:14:20 INFO  : Context for 'APU' is selected.
+21:14:20 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/fractal/_ide/psinit/ps7_init.tcl' is done.
+21:14:21 INFO  : 'ps7_init' command is executed.
+21:14:21 INFO  : 'ps7_post_config' command is executed.
+21:14:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:14:24 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/fractal/Debug/fractal.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:14:24 INFO  : 'configparams force-mem-access 0' command is executed.
+21:14:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/fractal/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/fractal/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/fractal/Debug/fractal.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:14:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:14:24 INFO  : 'con' command is executed.
+21:14:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:14:24 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_fractal_system\_ide\scripts\debugger_fractal-default.tcl'
+21:14:39 INFO  : Checking for BSP changes to sync application flags for project 'fractal'...
+21:14:50 INFO  : Disconnected from the channel tcfchan#24.
+21:14:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:14:51 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+21:14:51 INFO  : 'jtag frequency' command is executed.
+21:14:53 INFO  : Context for 'APU' is selected.
+21:14:53 INFO  : System reset is completed.
+21:14:56 INFO  : 'after 3000' command is executed.
+21:14:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+21:15:07 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/fractal/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+21:15:07 INFO  : Context for 'APU' is selected.
+21:15:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+21:15:07 INFO  : 'configparams force-mem-access 1' command is executed.
+21:15:07 INFO  : Context for 'APU' is selected.
+21:15:07 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/fractal/_ide/psinit/ps7_init.tcl' is done.
+21:15:08 INFO  : 'ps7_init' command is executed.
+21:15:08 INFO  : 'ps7_post_config' command is executed.
+21:15:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:15:11 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/fractal/Debug/fractal.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:15:11 INFO  : 'configparams force-mem-access 0' command is executed.
+21:15:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/fractal/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/fractal/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/fractal/Debug/fractal.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:15:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:15:11 INFO  : 'con' command is executed.
+21:15:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:15:11 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_fractal_system\_ide\scripts\debugger_fractal-default.tcl'
+21:35:36 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:35:52 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:40:55 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:41:17 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:41:26 INFO  : Disconnected from the channel tcfchan#25.
+21:41:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:41:27 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+21:41:27 INFO  : 'jtag frequency' command is executed.
+21:41:28 INFO  : Context for 'APU' is selected.
+21:41:28 INFO  : System reset is completed.
+21:41:31 INFO  : 'after 3000' command is executed.
+21:41:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+21:41:43 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+21:41:43 INFO  : Context for 'APU' is selected.
+21:41:43 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+21:41:43 INFO  : 'configparams force-mem-access 1' command is executed.
+21:41:43 INFO  : Context for 'APU' is selected.
+21:41:43 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl' is done.
+21:41:43 INFO  : 'ps7_init' command is executed.
+21:41:43 INFO  : 'ps7_post_config' command is executed.
+21:41:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:41:47 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:41:47 INFO  : 'configparams force-mem-access 0' command is executed.
+21:41:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:41:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:41:47 INFO  : 'con' command is executed.
+21:41:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:41:47 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_doom_system\_ide\scripts\debugger_doom-default.tcl'
+21:42:58 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:43:04 INFO  : Disconnected from the channel tcfchan#27.
+21:43:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:43:06 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+21:43:06 INFO  : 'jtag frequency' command is executed.
+21:43:06 INFO  : Context for 'APU' is selected.
+21:43:06 INFO  : System reset is completed.
+21:43:09 INFO  : 'after 3000' command is executed.
+21:43:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+21:43:20 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+21:43:20 INFO  : Context for 'APU' is selected.
+21:43:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+21:43:21 INFO  : 'configparams force-mem-access 1' command is executed.
+21:43:21 INFO  : Context for 'APU' is selected.
+21:43:21 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl' is done.
+21:43:21 INFO  : 'ps7_init' command is executed.
+21:43:21 INFO  : 'ps7_post_config' command is executed.
+21:43:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:43:24 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:43:24 INFO  : 'configparams force-mem-access 0' command is executed.
+21:43:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:43:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:43:25 INFO  : 'con' command is executed.
+21:43:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:43:25 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_doom_system\_ide\scripts\debugger_doom-default.tcl'
+21:43:40 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:43:46 INFO  : Disconnected from the channel tcfchan#28.
+21:43:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:43:47 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+21:43:47 INFO  : 'jtag frequency' command is executed.
+21:43:49 INFO  : Context for 'APU' is selected.
+21:43:49 INFO  : System reset is completed.
+21:43:52 INFO  : 'after 3000' command is executed.
+21:43:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+21:44:04 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+21:44:04 INFO  : Context for 'APU' is selected.
+21:44:04 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+21:44:04 INFO  : 'configparams force-mem-access 1' command is executed.
+21:44:04 INFO  : Context for 'APU' is selected.
+21:44:04 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl' is done.
+21:44:04 INFO  : 'ps7_init' command is executed.
+21:44:04 INFO  : 'ps7_post_config' command is executed.
+21:44:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:07 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:44:08 INFO  : 'configparams force-mem-access 0' command is executed.
+21:44:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:44:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:08 INFO  : 'con' command is executed.
+21:44:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:44:08 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_doom_system\_ide\scripts\debugger_doom-default.tcl'
+21:44:45 INFO  : Disconnected from the channel tcfchan#29.
+21:44:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:44:46 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+21:44:46 INFO  : 'jtag frequency' command is executed.
+21:44:49 INFO  : Context for 'APU' is selected.
+21:44:49 INFO  : System reset is completed.
+21:44:52 INFO  : 'after 3000' command is executed.
+21:44:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+21:45:03 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+21:45:03 INFO  : Context for 'APU' is selected.
+21:45:03 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+21:45:03 INFO  : 'configparams force-mem-access 1' command is executed.
+21:45:03 INFO  : Context for 'APU' is selected.
+21:45:03 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl' is done.
+21:45:04 INFO  : 'ps7_init' command is executed.
+21:45:04 INFO  : 'ps7_post_config' command is executed.
+21:45:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:45:07 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:45:07 INFO  : 'configparams force-mem-access 0' command is executed.
+21:45:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:45:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:45:07 INFO  : 'con' command is executed.
+21:45:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:45:07 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_doom_system\_ide\scripts\debugger_doom-default.tcl'
+21:45:14 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:45:26 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:51:51 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+21:53:58 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+22:00:22 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+22:00:53 INFO  : Disconnected from the channel tcfchan#30.
+22:00:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:00:54 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+22:00:54 INFO  : 'jtag frequency' command is executed.
+22:00:56 INFO  : Context for 'APU' is selected.
+22:00:56 INFO  : System reset is completed.
+22:00:59 INFO  : 'after 3000' command is executed.
+22:00:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+22:01:11 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+22:01:11 INFO  : Context for 'APU' is selected.
+22:01:11 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+22:01:11 INFO  : 'configparams force-mem-access 1' command is executed.
+22:01:11 INFO  : Context for 'APU' is selected.
+22:01:11 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl' is done.
+22:01:11 INFO  : 'ps7_init' command is executed.
+22:01:11 INFO  : 'ps7_post_config' command is executed.
+22:01:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:01:20 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:01:20 INFO  : 'configparams force-mem-access 0' command is executed.
+22:01:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:01:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:01:20 INFO  : 'con' command is executed.
+22:01:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:01:20 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_doom_system\_ide\scripts\debugger_doom-default.tcl'
+22:01:51 INFO  : Disconnected from the channel tcfchan#31.
+22:01:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:01:52 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+22:01:52 INFO  : 'jtag frequency' command is executed.
+22:01:53 INFO  : Context for 'APU' is selected.
+22:01:53 INFO  : System reset is completed.
+22:01:56 INFO  : 'after 3000' command is executed.
+22:01:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+22:02:07 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/shell/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+22:02:07 INFO  : Context for 'APU' is selected.
+22:02:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+22:02:07 INFO  : 'configparams force-mem-access 1' command is executed.
+22:02:07 INFO  : Context for 'APU' is selected.
+22:02:07 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/shell/_ide/psinit/ps7_init.tcl' is done.
+22:02:08 INFO  : 'ps7_init' command is executed.
+22:02:08 INFO  : 'ps7_post_config' command is executed.
+22:02:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:02:12 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/shell/Debug/shell.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:02:12 INFO  : 'configparams force-mem-access 0' command is executed.
+22:02:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/shell/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/shell/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/shell/Debug/shell.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:02:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:02:12 INFO  : 'con' command is executed.
+22:02:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:02:12 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_shell_system\_ide\scripts\debugger_shell-default.tcl'
+22:06:27 INFO  : Disconnected from the channel tcfchan#32.
+22:06:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:06:28 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+22:06:28 INFO  : 'jtag frequency' command is executed.
+22:06:30 INFO  : Context for 'APU' is selected.
+22:06:30 INFO  : System reset is completed.
+22:06:33 INFO  : 'after 3000' command is executed.
+22:06:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+22:06:45 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+22:06:45 INFO  : Context for 'APU' is selected.
+22:06:45 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+22:06:45 INFO  : 'configparams force-mem-access 1' command is executed.
+22:06:45 INFO  : Context for 'APU' is selected.
+22:06:45 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl' is done.
+22:06:45 INFO  : 'ps7_init' command is executed.
+22:06:45 INFO  : 'ps7_post_config' command is executed.
+22:06:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:06:54 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:06:54 INFO  : 'configparams force-mem-access 0' command is executed.
+22:06:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:06:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:06:54 INFO  : 'con' command is executed.
+22:06:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:06:54 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_doom_system\_ide\scripts\debugger_doom-default.tcl'
+22:09:55 INFO  : Result from executing command 'removePlatformRepo': 
+22:10:25 INFO  : Result from executing command 'getProjects': tangerineZ7_20_wrapper;tangerineZ7_20_wrapper_ethernet
+22:10:25 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+22:10:26 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+22:11:04 INFO  : Disconnected from the channel tcfchan#33.
+22:11:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:11:05 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+22:11:05 INFO  : 'jtag frequency' command is executed.
+22:11:07 INFO  : Context for 'APU' is selected.
+22:11:08 INFO  : System reset is completed.
+22:11:11 INFO  : 'after 3000' command is executed.
+22:11:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+22:11:22 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+22:11:22 INFO  : Context for 'APU' is selected.
+22:11:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+22:11:22 INFO  : 'configparams force-mem-access 1' command is executed.
+22:11:22 INFO  : Context for 'APU' is selected.
+22:11:22 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl' is done.
+22:11:23 INFO  : 'ps7_init' command is executed.
+22:11:23 INFO  : 'ps7_post_config' command is executed.
+22:11:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:11:34 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:11:34 INFO  : 'configparams force-mem-access 0' command is executed.
+22:11:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:11:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:11:34 INFO  : 'con' command is executed.
+22:11:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:11:34 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_doom_system\_ide\scripts\debugger_doom-default.tcl'
+22:13:07 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+22:13:44 INFO  : Disconnected from the channel tcfchan#37.
+22:13:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:13:45 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+22:13:45 INFO  : 'jtag frequency' command is executed.
+22:13:46 INFO  : Context for 'APU' is selected.
+22:13:46 INFO  : System reset is completed.
+22:13:49 INFO  : 'after 3000' command is executed.
+22:13:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+22:14:01 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+22:14:01 INFO  : Context for 'APU' is selected.
+22:14:01 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+22:14:01 INFO  : 'configparams force-mem-access 1' command is executed.
+22:14:01 INFO  : Context for 'APU' is selected.
+22:14:01 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl' is done.
+22:14:01 INFO  : 'ps7_init' command is executed.
+22:14:01 INFO  : 'ps7_post_config' command is executed.
+22:14:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:14:10 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:14:10 INFO  : 'configparams force-mem-access 0' command is executed.
+22:14:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:14:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:14:10 INFO  : 'con' command is executed.
+22:14:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:14:10 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_doom_system\_ide\scripts\debugger_doom-default.tcl'
+22:17:32 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+22:17:45 INFO  : Disconnected from the channel tcfchan#39.
+22:17:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:17:46 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+22:17:46 INFO  : 'jtag frequency' command is executed.
+22:17:47 INFO  : Context for 'APU' is selected.
+22:17:47 INFO  : System reset is completed.
+22:17:50 INFO  : 'after 3000' command is executed.
+22:17:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+22:18:01 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+22:18:01 INFO  : Context for 'APU' is selected.
+22:18:01 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+22:18:01 INFO  : 'configparams force-mem-access 1' command is executed.
+22:18:01 INFO  : Context for 'APU' is selected.
+22:18:01 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl' is done.
+22:18:02 INFO  : 'ps7_init' command is executed.
+22:18:02 INFO  : 'ps7_post_config' command is executed.
+22:18:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:18:11 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:18:11 INFO  : 'configparams force-mem-access 0' command is executed.
+22:18:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:18:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:18:11 INFO  : 'con' command is executed.
+22:18:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:18:11 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_doom_system\_ide\scripts\debugger_doom-default.tcl'
+22:18:37 INFO  : Checking for BSP changes to sync application flags for project 'doom'...
+22:18:42 INFO  : Disconnected from the channel tcfchan#40.
+22:18:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:18:43 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+22:18:43 INFO  : 'jtag frequency' command is executed.
+22:18:45 INFO  : Context for 'APU' is selected.
+22:18:45 INFO  : System reset is completed.
+22:18:48 INFO  : 'after 3000' command is executed.
+22:18:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+22:19:00 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+22:19:00 INFO  : Context for 'APU' is selected.
+22:19:00 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+22:19:00 INFO  : 'configparams force-mem-access 1' command is executed.
+22:19:00 INFO  : Context for 'APU' is selected.
+22:19:00 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl' is done.
+22:19:00 INFO  : 'ps7_init' command is executed.
+22:19:00 INFO  : 'ps7_post_config' command is executed.
+22:19:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:09 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:19:09 INFO  : 'configparams force-mem-access 0' command is executed.
+22:19:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/doom/Debug/doom.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:19:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:09 INFO  : 'con' command is executed.
+22:19:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:19:09 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_doom_system\_ide\scripts\debugger_doom-default.tcl'
+22:22:13 INFO  : No changes in MSS file content so sources will not be generated.
+22:24:12 INFO  : Projects exported to 'C:\Users\qubeck\Documents\Development\ProjektyVitis\tangerineZ7_doom_system.ide.zip'
+22:25:01 INFO  : Result from executing command 'getProjects': tangerineZ7_20_wrapper;tangerineZ7_20_wrapper_ethernet
+22:25:01 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx2023.1/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+22:25:02 INFO  : Checking for BSP changes to sync application flags for project 'slideshow'...
+22:25:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:25:34 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+22:25:34 INFO  : 'jtag frequency' command is executed.
+22:25:34 INFO  : Context for 'APU' is selected.
+22:25:34 INFO  : System reset is completed.
+22:25:37 INFO  : 'after 3000' command is executed.
+22:25:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+22:25:49 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+22:25:49 INFO  : Context for 'APU' is selected.
+22:25:49 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+22:25:49 INFO  : 'configparams force-mem-access 1' command is executed.
+22:25:49 INFO  : Context for 'APU' is selected.
+22:25:49 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl' is done.
+22:25:49 INFO  : 'ps7_init' command is executed.
+22:25:49 INFO  : 'ps7_post_config' command is executed.
+22:25:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:25:53 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:25:53 INFO  : 'configparams force-mem-access 0' command is executed.
+22:25:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:25:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:25:53 INFO  : 'con' command is executed.
+22:25:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:25:53 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_slideshow_system\_ide\scripts\debugger_slideshow-default.tcl'
+22:31:16 INFO  : Checking for BSP changes to sync application flags for project 'slideshow'...
+22:31:20 INFO  : Disconnected from the channel tcfchan#41.
+22:31:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:31:21 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+22:31:21 INFO  : 'jtag frequency' command is executed.
+22:31:21 INFO  : Context for 'APU' is selected.
+22:31:21 INFO  : System reset is completed.
+22:31:24 INFO  : 'after 3000' command is executed.
+22:31:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+22:31:36 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+22:31:36 INFO  : Context for 'APU' is selected.
+22:31:36 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+22:31:36 INFO  : 'configparams force-mem-access 1' command is executed.
+22:31:36 INFO  : Context for 'APU' is selected.
+22:31:36 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl' is done.
+22:31:36 INFO  : 'ps7_init' command is executed.
+22:31:36 INFO  : 'ps7_post_config' command is executed.
+22:31:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:31:40 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:31:40 INFO  : 'configparams force-mem-access 0' command is executed.
+22:31:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:31:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:31:40 INFO  : 'con' command is executed.
+22:31:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:31:40 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_slideshow_system\_ide\scripts\debugger_slideshow-default.tcl'
+22:35:09 INFO  : Checking for BSP changes to sync application flags for project 'slideshow'...
+22:35:13 INFO  : Disconnected from the channel tcfchan#43.
+22:35:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:35:14 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+22:35:14 INFO  : 'jtag frequency' command is executed.
+22:35:14 INFO  : Context for 'APU' is selected.
+22:35:15 INFO  : System reset is completed.
+22:35:18 INFO  : 'after 3000' command is executed.
+22:35:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+22:35:29 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+22:35:29 INFO  : Context for 'APU' is selected.
+22:35:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+22:35:29 INFO  : 'configparams force-mem-access 1' command is executed.
+22:35:29 INFO  : Context for 'APU' is selected.
+22:35:29 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl' is done.
+22:35:30 INFO  : 'ps7_init' command is executed.
+22:35:30 INFO  : 'ps7_post_config' command is executed.
+22:35:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:35:33 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:35:33 INFO  : 'configparams force-mem-access 0' command is executed.
+22:35:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:35:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:35:33 INFO  : 'con' command is executed.
+22:35:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:35:33 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_slideshow_system\_ide\scripts\debugger_slideshow-default.tcl'
+22:42:14 INFO  : Disconnected from the channel tcfchan#44.
+22:42:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:42:16 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+22:42:16 INFO  : 'jtag frequency' command is executed.
+22:42:16 INFO  : Context for 'APU' is selected.
+22:42:16 INFO  : System reset is completed.
+22:42:19 INFO  : 'after 3000' command is executed.
+22:42:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+22:42:30 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/shell/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+22:42:30 INFO  : Context for 'APU' is selected.
+22:42:30 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+22:42:30 INFO  : 'configparams force-mem-access 1' command is executed.
+22:42:30 INFO  : Context for 'APU' is selected.
+22:42:30 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/shell/_ide/psinit/ps7_init.tcl' is done.
+22:42:31 INFO  : 'ps7_init' command is executed.
+22:42:31 INFO  : 'ps7_post_config' command is executed.
+22:42:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:42:35 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/shell/Debug/shell.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:42:35 INFO  : 'configparams force-mem-access 0' command is executed.
+22:42:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/shell/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/shell/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/shell/Debug/shell.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:42:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:42:35 INFO  : 'con' command is executed.
+22:42:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:42:35 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_shell_system\_ide\scripts\debugger_shell-default.tcl'
+22:44:38 INFO  : Disconnected from the channel tcfchan#45.
+22:44:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:44:39 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+22:44:39 INFO  : 'jtag frequency' command is executed.
+22:44:39 INFO  : Context for 'APU' is selected.
+22:44:40 INFO  : System reset is completed.
+22:44:43 INFO  : 'after 3000' command is executed.
+22:44:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+22:44:54 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+22:44:54 INFO  : Context for 'APU' is selected.
+22:44:54 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+22:44:54 INFO  : 'configparams force-mem-access 1' command is executed.
+22:44:54 INFO  : Context for 'APU' is selected.
+22:44:54 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl' is done.
+22:44:55 INFO  : 'ps7_init' command is executed.
+22:44:55 INFO  : 'ps7_post_config' command is executed.
+22:44:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:44:58 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:44:58 INFO  : 'configparams force-mem-access 0' command is executed.
+22:44:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:44:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:44:58 INFO  : 'con' command is executed.
+22:44:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:44:58 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_slideshow_system\_ide\scripts\debugger_slideshow-default.tcl'
+23:15:26 INFO  : Checking for BSP changes to sync application flags for project 'slideshow'...
+23:18:31 INFO  : Checking for BSP changes to sync application flags for project 'slideshow'...
+23:19:03 INFO  : Checking for BSP changes to sync application flags for project 'slideshow'...
+23:19:09 INFO  : Disconnected from the channel tcfchan#46.
+23:19:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:19:10 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+23:19:10 INFO  : 'jtag frequency' command is executed.
+23:19:10 INFO  : Context for 'APU' is selected.
+23:19:10 INFO  : System reset is completed.
+23:19:13 INFO  : 'after 3000' command is executed.
+23:19:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+23:19:24 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+23:19:24 INFO  : Context for 'APU' is selected.
+23:19:24 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+23:19:24 INFO  : 'configparams force-mem-access 1' command is executed.
+23:19:24 INFO  : Context for 'APU' is selected.
+23:19:24 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl' is done.
+23:19:25 INFO  : 'ps7_init' command is executed.
+23:19:25 INFO  : 'ps7_post_config' command is executed.
+23:19:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:19:28 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:19:28 INFO  : 'configparams force-mem-access 0' command is executed.
+23:19:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:19:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:19:28 INFO  : 'con' command is executed.
+23:19:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:19:28 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_slideshow_system\_ide\scripts\debugger_slideshow-default.tcl'
+23:20:06 INFO  : Checking for BSP changes to sync application flags for project 'slideshow'...
+23:20:10 INFO  : Disconnected from the channel tcfchan#47.
+23:20:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:20:11 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+23:20:11 INFO  : 'jtag frequency' command is executed.
+23:20:11 INFO  : Context for 'APU' is selected.
+23:20:11 INFO  : System reset is completed.
+23:20:14 INFO  : 'after 3000' command is executed.
+23:20:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+23:20:26 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+23:20:26 INFO  : Context for 'APU' is selected.
+23:20:26 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+23:20:26 INFO  : 'configparams force-mem-access 1' command is executed.
+23:20:26 INFO  : Context for 'APU' is selected.
+23:20:26 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl' is done.
+23:20:26 INFO  : 'ps7_init' command is executed.
+23:20:26 INFO  : 'ps7_post_config' command is executed.
+23:20:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:20:30 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:20:30 INFO  : 'configparams force-mem-access 0' command is executed.
+23:20:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:20:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:20:30 INFO  : 'con' command is executed.
+23:20:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:20:30 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_slideshow_system\_ide\scripts\debugger_slideshow-default.tcl'
+23:22:07 INFO  : Checking for BSP changes to sync application flags for project 'slideshow'...
+23:22:11 INFO  : Disconnected from the channel tcfchan#48.
+23:22:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:22:12 INFO  : Jtag cable 'Platform Cable USB II 00001510415d01' is selected.
+23:22:12 INFO  : 'jtag frequency' command is executed.
+23:22:12 INFO  : Context for 'APU' is selected.
+23:22:12 INFO  : System reset is completed.
+23:22:15 INFO  : 'after 3000' command is executed.
+23:22:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}' command is executed.
+23:22:27 INFO  : Device configured successfully with "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit"
+23:22:27 INFO  : Context for 'APU' is selected.
+23:22:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa'.
+23:22:27 INFO  : 'configparams force-mem-access 1' command is executed.
+23:22:27 INFO  : Context for 'APU' is selected.
+23:22:27 INFO  : Sourcing of 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl' is done.
+23:22:27 INFO  : 'ps7_init' command is executed.
+23:22:27 INFO  : 'ps7_post_config' command is executed.
+23:22:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:22:31 INFO  : The application 'C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:22:31 INFO  : 'configparams force-mem-access 0' command is executed.
+23:22:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/Debug/slideshow.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:22:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:22:31 INFO  : 'con' command is executed.
+23:22:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:22:31 INFO  : Launch script is exported to file 'C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\tangerineZ7_slideshow_system\_ide\scripts\debugger_slideshow-default.tcl'
+23:23:55 WARN  : channel "tcfchan#41" closed
+23:23:55 INFO  : Disconnected from the channel tcfchan#49.

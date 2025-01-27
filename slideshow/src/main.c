@@ -137,6 +137,25 @@ uint32_t getEntry( uint32_t entryNumber )
     return 0;
 }
 
+int32_t drawBackground( tgfBitmap *bmp )
+{
+   uint32_t i;
+   uint32_t j;
+   uint32_t df;
+
+   df = bmp->height / 120;
+
+   for( i = 0; i < bmp->height; i++ )
+   {
+      j = i / df;
+      gfFillRect( bmp, 0, i, bmp->width - 1, i, gfColor( j, j / 2, j ) );
+   }
+
+   bspDCFlush();
+
+   return 0;
+}
+
 
 uint32_t slideshow()
 {
@@ -146,7 +165,9 @@ uint32_t slideshow()
     int16_t         y;
     char            extension[8];
     tosUIEvent      event;
+    uint32_t        bgRedrawCounter;
 
+    bgRedrawCounter = 0;
 
     do{
 
@@ -169,6 +190,18 @@ uint32_t slideshow()
                 if( ( strcmp( extension, ".jpg" ) == 0 ) || ( strcmp( extension, ".gbm" ) == 0 ) )
                 {
 
+                    if( !bgRedrawCounter )
+                    {
+
+                       drawBackground( &screen );
+
+                       bgRedrawCounter = 19;
+
+                    }
+                    else
+                    {
+                       bgRedrawCounter--;
+                    }
 
                     strcpy( buf, "img/" );
                     strcat( buf, dirItem.name );
@@ -290,13 +323,9 @@ uint32_t slideshow()
 }
 
 
-
 int main()
 {
-   uint32_t       i;
-   uint32_t       j;
    tosUIEvent     event;
-   int32_t        sample;
 
    //volatile       uint32_t *paletteRegs = (uint32_t*)0x45000400;
 
@@ -313,14 +342,8 @@ int main()
    setVideoMode( _VIDEOMODE_640_TEXT80_OVER_GFX );
    gfDisplayBitmap( &screen );
 
+   drawBackground( &screen );
 
-   for( i = 0; i < 480; i++ )
-   {
-      j = i / 4;
-      gfFillRect( &screen, 0, i, screen.width - 1, i, gfColor( j, j / 2, j ) );
-   }
-
-   bspDCFlush();
 
    printf( "\n" );
    printf( "        |.\\__/.|    (~\\ \n" );
@@ -336,9 +359,9 @@ int main()
    osFInit();
    osUIEventsInit();
 
+   printf( ">" );
+   fflush( stdout );
 
-   i = 0;
-   j = 1;
    do
    {
       if( !osGetUIEvent( &event ) )
@@ -352,11 +375,11 @@ int main()
 
              if( event.arg1 == 27 )
              {
-                j = 0;
+                break;
              }
           }
       }
-   }while( j );
+   }while( 1 );
 
    //delayMs( 5000 );
 

@@ -1,9 +1,93 @@
-17:36:32 **** Incremental Build of configuration Debug for project mp3Player ****
+20:03:02 **** Incremental Build of configuration Debug for project mp3Player ****
 make all 
 D:/Xilinx2023.1/Vitis/2023.1/gnuwin/bin/make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 D:/Xilinx2023.1/Vitis/2023.1/gnuwin/bin/make --no-print-directory main-build
+'Building file: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/bsp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -g3 -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\gfxLib" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\pub" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\real" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix" -c -fmessage-length=0 -MT"src/gfxLib/bsp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/sw/tangerineZ7_20_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/gfxLib/bsp.d" -MT"src/gfxLib/bsp.o" -o "src/gfxLib/bsp.o" "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/bsp.c"
+'Finished building: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/bsp.c'
+' '
+'Building file: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfAudio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -g3 -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\gfxLib" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\pub" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\real" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix" -c -fmessage-length=0 -MT"src/gfxLib/gfAudio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/sw/tangerineZ7_20_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/gfxLib/gfAudio.d" -MT"src/gfxLib/gfAudio.o" -o "src/gfxLib/gfAudio.o" "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfAudio.c"
+'Finished building: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfAudio.c'
+' '
+'Building file: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfBitmap.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -g3 -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\gfxLib" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\pub" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\real" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix" -c -fmessage-length=0 -MT"src/gfxLib/gfBitmap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/sw/tangerineZ7_20_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/gfxLib/gfBitmap.d" -MT"src/gfxLib/gfBitmap.o" -o "src/gfxLib/gfBitmap.o" "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfBitmap.c"
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfBitmap.c: In function 'gfLoadBitmapFS':
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfBitmap.c:116:45: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+  116 |             bmpBufferUS[ i ] = ( tmp >> 8 ) & 0xff | ( tmp & 0xff ) << 8;
+      |                                ~~~~~~~~~~~~~^~~~~~
+'Finished building: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfBitmap.c'
+' '
+'Building file: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfDrawing.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -g3 -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\gfxLib" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\pub" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\real" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix" -c -fmessage-length=0 -MT"src/gfxLib/gfDrawing.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/sw/tangerineZ7_20_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/gfxLib/gfDrawing.d" -MT"src/gfxLib/gfDrawing.o" -o "src/gfxLib/gfDrawing.o" "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfDrawing.c"
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfDrawing.c: In function 'gfFillRect':
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfDrawing.c:273:16: warning: unused variable 'bh' [-Wunused-variable]
+  273 |    int16_t     bh;
+      |                ^~
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfDrawing.c:272:16: warning: unused variable 'bw' [-Wunused-variable]
+  272 |    int16_t     bw;
+      |                ^~
+'Finished building: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfDrawing.c'
+' '
+'Building file: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -g3 -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\gfxLib" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\pub" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\real" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix" -c -fmessage-length=0 -MT"src/gfxLib/gfFont.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/sw/tangerineZ7_20_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/gfxLib/gfFont.d" -MT"src/gfxLib/gfFont.o" -o "src/gfxLib/gfFont.o" "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c"
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c: In function 'gfPutChar':
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c:227:82: warning: array subscript has type 'char' [-Wchar-subscripts]
+  227 |                                 for( cx = 0; cx < ( ( uint8_t* )font->charWidths)[ c ] ; cx+=2 )
+      |                                                                                  ^
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c:276:63: warning: array subscript has type 'char' [-Wchar-subscripts]
+  276 |                         return ( ( uint8_t* )font->charWidths)[ c ];
+      |                                                               ^
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c: In function 'gfDrawTextOverlay':
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c:323:20: warning: unused variable 'alphaBackground' [-Wunused-variable]
+  323 |         uint8_t    alphaBackground;
+      |                    ^~~~~~~~~~~~~~~
+'Finished building: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c'
+' '
+'Building file: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfGouraud.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -g3 -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\gfxLib" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\pub" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\real" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix" -c -fmessage-length=0 -MT"src/gfxLib/gfGouraud.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/sw/tangerineZ7_20_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/gfxLib/gfGouraud.d" -MT"src/gfxLib/gfGouraud.o" -o "src/gfxLib/gfGouraud.o" "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfGouraud.c"
+'Finished building: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfGouraud.c'
+' '
+'Building file: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/osFile.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -g3 -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\gfxLib" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\pub" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\real" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix" -c -fmessage-length=0 -MT"src/gfxLib/osFile.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/sw/tangerineZ7_20_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/gfxLib/osFile.d" -MT"src/gfxLib/osFile.o" -o "src/gfxLib/osFile.o" "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/osFile.c"
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/osFile.c: In function 'osFRead':
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/osFile.c:120:12: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  120 |    FRESULT res;
+      |            ^~~
+'Finished building: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/osFile.c'
+' '
+'Building file: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/osSerial.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -g3 -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\gfxLib" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\pub" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\real" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix" -c -fmessage-length=0 -MT"src/gfxLib/osSerial.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/sw/tangerineZ7_20_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/gfxLib/osSerial.d" -MT"src/gfxLib/osSerial.o" -o "src/gfxLib/osSerial.o" "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/osSerial.c"
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/osSerial.c: In function 'osSerialPrint':
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/osSerial.c:110:11: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  110 |    while( c = *buf++ )
+      |           ^
+'Finished building: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/osSerial.c'
+' '
+'Building file: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/osUIEvents.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -g3 -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\gfxLib" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\pub" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\real" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix" -c -fmessage-length=0 -MT"src/gfxLib/osUIEvents.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/sw/tangerineZ7_20_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/gfxLib/osUIEvents.d" -MT"src/gfxLib/osUIEvents.o" -o "src/gfxLib/osUIEvents.o" "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/osUIEvents.c"
+'Finished building: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/osUIEvents.c'
+' '
+'Building file: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/ps2Host.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -g3 -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\gfxLib" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\pub" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\real" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix" -c -fmessage-length=0 -MT"src/gfxLib/ps2Host.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/sw/tangerineZ7_20_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/gfxLib/ps2Host.d" -MT"src/gfxLib/ps2Host.o" -o "src/gfxLib/ps2Host.o" "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/ps2Host.c"
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/ps2Host.c: In function 'ps2HostSetKeyboardLeds':
+C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/ps2Host.c:263:22: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  263 |    volatile uint32_t i;
+      |                      ^
+'Finished building: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/ps2Host.c'
+' '
 'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O2 -g3 -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\gfxLib" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\pub" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix\real" -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\mp3Player\src\libHelix" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/sw/tangerineZ7_20_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
@@ -33,5 +117,5 @@ arm-none-eabi-size mp3Player.elf  |tee "mp3Player.elf.size"
 'Finished building: mp3Player.elf.size'
 ' '
 
-17:36:33 Build Finished (took 964ms)
+20:03:05 Build Finished (took 3s.786ms)
 

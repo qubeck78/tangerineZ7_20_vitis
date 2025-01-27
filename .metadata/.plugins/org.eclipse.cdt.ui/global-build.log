@@ -1,26 +1,30 @@
 Nothing to build in platform 'tangerineZ7_20_wrapper'
 
-19:09:49 **** Incremental Build of configuration Debug for project slideshow ****
+23:22:07 **** Incremental Build of configuration Debug for project slideshow ****
 make all 
 D:/Xilinx2023.1/Vitis/2023.1/gnuwin/bin/make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 D:/Xilinx2023.1/Vitis/2023.1/gnuwin/bin/make --no-print-directory main-build
-'Building file: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c'
+'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -g3 -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\gfxLib" -c -fmessage-length=0 -MT"src/gfxLib/gfFont.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/sw/tangerineZ7_20_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/gfxLib/gfFont.d" -MT"src/gfxLib/gfFont.o" -o "src/gfxLib/gfFont.o" "C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c"
-C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c: In function 'gfPutChar':
-C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c:227:82: warning: array subscript has type 'char' [-Wchar-subscripts]
-  227 |                                 for( cx = 0; cx < ( ( uint8_t* )font->charWidths)[ c ] ; cx+=2 )
-      |                                                                                  ^
-C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c:276:63: warning: array subscript has type 'char' [-Wchar-subscripts]
-  276 |                         return ( ( uint8_t* )font->charWidths)[ c ];
-      |                                                               ^
-C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c: In function 'gfDrawTextOverlay':
-C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c:323:20: warning: unused variable 'alphaBackground' [-Wunused-variable]
-  323 |         uint8_t    alphaBackground;
-      |                    ^~~~~~~~~~~~~~~
-'Finished building: C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/gfxLib/gfFont.c'
+arm-none-eabi-gcc -Wall -O2 -g3 -I"C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\gfxLib" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/sw/tangerineZ7_20_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'getNumEntries':
+../src/main.c:108:15: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  108 |     printf( "%d entries\n", numEntries );
+      |              ~^             ~~~~~~~~~~
+      |               |             |
+      |               int           uint32_t {aka long unsigned int}
+      |              %ld
+../src/main.c: In function 'getEntry':
+../src/main.c:116:14: warning: variable 'rv' set but not used [-Wunused-but-set-variable]
+  116 |     uint32_t rv;
+      |              ^~
+../src/main.c: In function 'slideshow':
+../src/main.c:162:21: warning: unused variable 'rv' [-Wunused-variable]
+  162 |     uint32_t        rv;
+      |                     ^~
+'Finished building: ../src/main.c'
 ' '
 'Building target: slideshow.elf'
 'Invoking: ARM v7 gcc linker'
@@ -30,6 +34,6 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size slideshow.elf  |tee "slideshow.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 184372	   2632	  79344	 266348	  4106c	slideshow.elf
+ 184468	   2632	  79344	 266444	  410cc	slideshow.elf
 'Finished building: slideshow.elf.size'
 ' '
