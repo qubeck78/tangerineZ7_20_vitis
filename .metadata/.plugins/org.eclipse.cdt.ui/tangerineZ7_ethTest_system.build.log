@@ -1,0 +1,8 @@
+12:24:27 **** Clean-only build of configuration Debug for project tangerineZ7_ethTest_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+
+12:24:28 Build Finished (took 116ms)
+
