@@ -79,6 +79,8 @@ typedef struct __BSP_T
     volatile uint32_t   ch0DmaRequest0PtrAdd;
     volatile uint32_t   ch0DmaRequest1PtrAdd;
 
+    volatile uint32_t   pgCursorXY;
+
 }_BSP_T;
 
 extern _BSP_T *bsp;

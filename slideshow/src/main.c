@@ -338,12 +338,13 @@ int main()
    screen.rowWidth   = 1024;
    screen.buffer     = osAlloc( screen.rowWidth * screen.height * 2, OS_ALLOC_MEMF_CHIP );
 
-
    setVideoMode( _VIDEOMODE_640_TEXT80_OVER_GFX );
    gfDisplayBitmap( &screen );
 
    drawBackground( &screen );
 
+   //display cursor
+   con.flags |= GF_TEXT_OVERLAY_FLAG_SHOW_CURSOR;
 
    printf( "\n" );
    printf( "        |.\\__/.|    (~\\ \n" );
@@ -361,6 +362,7 @@ int main()
 
    printf( ">" );
    fflush( stdout );
+
 
    do
    {
@@ -384,6 +386,9 @@ int main()
    //delayMs( 5000 );
 
    numDirEntries = getNumEntries();
+
+   //hide cursor
+   con.flags &= 0xffff ^ GF_TEXT_OVERLAY_FLAG_SHOW_CURSOR;
 
    if( numDirEntries )
    {

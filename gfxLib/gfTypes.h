@@ -5,7 +5,7 @@
 
 //Version
 
-#define _GFXLIB_VERSION 20241228
+#define _GFXLIB_VERSION 20250128
 
 
 //Platform

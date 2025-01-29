@@ -317,3 +317,9 @@ platform active {tangerineZ7_20_wrapper}
 bsp reload
 bsp reload
 platform generate -domains 
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
