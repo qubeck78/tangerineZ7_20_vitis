@@ -343,6 +343,7 @@ int main()
 
    drawBackground( &screen );
 
+
    //display cursor
    con.flags |= GF_TEXT_OVERLAY_FLAG_SHOW_CURSOR;
 
@@ -351,8 +352,9 @@ int main()
    printf( "        | O O  |     ) ) \n" );
    printf( "      _.|  T   |_   ( (  \n" );
    printf( "   .-- ((---- ((-------------.\n" );
-   printf( "   | Zynq slideshow 20250127 |\n" );
+   printf( "   | Zynq slideshow 20250129 |\n" );
    printf( "   |     tangerine Z7_20     |\n" );
+//   printf( "   |     SD BOOT             |\n" );
    printf( "   |     SOC:%08x        |\n", (int)bsp->version );
    printf( "   `-------------------------`\n" );
    printf( "\n\n\n");
@@ -394,7 +396,6 @@ int main()
    {
       slideshow();
    }
-
 
    cleanup_platform();
 

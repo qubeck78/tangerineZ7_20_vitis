@@ -19,7 +19,12 @@
 extern tgfTextOverlay  con;
 
 tgfBitmap   screen;
+tgfBitmap   background;
+
 tosFile     in;
+
+#define MP3_FILE_BUFFER_SIZE  65536
+#define AUDIO_BUFFER_SIZE     65536
 
 //check whole lib fork for esp32 https://github.com/pschatzmann/arduino-libhelix/tree/main/src/libhelix-mp3
 
@@ -51,6 +56,21 @@ static uint32_t waitKey()
     return 0;
 }
 
+uint32_t readAndFillBuffer( uint8_t *mp3Buffer, uint8_t *currentMp3, uint32_t mp3BufferSize, int32_t bytesLeft )
+{
+   uint32_t nbr;
+
+   memmove( mp3Buffer, currentMp3, bytesLeft );
+
+   osFRead( &in, mp3Buffer + bytesLeft, mp3BufferSize - bytesLeft, &nbr );
+
+   if( nbr < ( mp3BufferSize - bytesLeft ) )
+   {
+      memset( mp3Buffer + bytesLeft + nbr, 0, mp3BufferSize - bytesLeft - nbr );
+   }
+
+   return nbr;
+}
 
 int main()
 {
@@ -77,26 +97,33 @@ int main()
    screen.rowWidth   = 512;
    screen.buffer     = osAlloc( screen.rowWidth * screen.height * 2, OS_ALLOC_MEMF_CHIP );
 
-   setVideoMode( _VIDEOMODE_320_TEXT80_OVER_GFX );
+   setVideoMode( _VIDEOMODE_320_TEXT80_60_OVER_GFX );
    gfDisplayBitmap( &screen );
 
    gfFillRect( &screen, 0, 0, 319, 239, gfColor( 0, 0, 0) );
+
    bspDCFlush();
 
-   printf( "\n" );
-   printf( "        |.\\__/.|    (~\\ \n" );
-   printf( "        | O O  |     ) ) \n" );
-   printf( "      _.|  T   |_   ( (  \n" );
-   printf( "   .-- ((---- ((-------------.\n" );
-   printf( "   | Zynq MP3Player 20250119 |\n" );
-   printf( "   |     tangerine Z7_20     |\n" );
-   printf( "   |     SOC:%08x        |\n", (int)bsp->version );
-   printf( "   `-------------------------`\n" );
-   printf( "\n\n\n");
+   con.flags |= GF_TEXT_OVERLAY_FLAG_SHOW_CURSOR;
+
+   printf( "     |.\\__/.|    (~\\ \n" );
+   printf( "     | O O  |     ) ) \n" );
+   printf( "   _.|  T   |_   ( (  \n" );
+   printf( ".-- ((---- ((-------------.\n" );
+   printf( "| Zynq MP3Player 20250129 |\n" );
+   printf( "|     tangerine Z7_20     |\n" );
+   printf( "|     SOC:%08x        |\n", (int)bsp->version );
+   printf( "`-------------------------`\n" );
+   printf( "\n\n");
 
 
    osFInit();
    osUIEventsInit();
+
+   gfLoadBitmapFS( &background, "0:/snd/catheadphones.gbm" );
+
+   gfBlitBitmap( &screen, &background, 0, 0 );
+   bspDCFlush();
 
    audioBuffer = ( int16_t * )osAlloc( 65536, OS_ALLOC_MEMF_CHIP );
 
@@ -122,8 +149,10 @@ int main()
 
    gfAudioInit();
 
-
-   strcpy( mp3FileName, "0:/snd/bloom1.mp3" );
+//   strcpy( mp3FileName, "0:/snd/connectohm.mp3" );
+     strcpy( mp3FileName, "0:/snd/fahrenheit.mp3" );
+//   strcpy( mp3FileName, "0:/snd/tipper.mp3" );
+//   strcpy( mp3FileName, "0:/snd/bloom1.mp3" );
 //   strcpy( mp3FileName, "0:/snd/bloom2.mp3" );
 //   strcpy( mp3FileName, "0:/snd/fauna.mp3" );
 //   strcpy( mp3FileName, "0:/snd/starfish.mp3" );
@@ -140,12 +169,12 @@ int main()
 
    }
 
-   mp3Buffer   = (uint8_t*) osAlloc( mp3Size, OS_ALLOC_MEMF_CHIP );
+   mp3Buffer   = (uint8_t*) osAlloc( MP3_FILE_BUFFER_SIZE, OS_ALLOC_MEMF_CHIP );
 
 
    if( !mp3Buffer )
    {
-       printf( "Can't alloc %d bytes for mp3 - press pause to reboot\n" );
+       printf( "Can't alloc %d bytes for mp3 file buffer - press pause to reboot\n", MP3_FILE_BUFFER_SIZE );
 
        do{
 
@@ -155,7 +184,7 @@ int main()
 
    }
 
-   printf( "Loading %s (%d)\n", mp3FileName, mp3Size );
+   printf( "%s ( %dMB )\n", mp3FileName, (int)( mp3Size / 1048576 ) );
 
    if( osFOpen( &in, mp3FileName, OS_FILE_READ ) )
    {
@@ -168,14 +197,13 @@ int main()
        }while( 1 );
    }
 
+   //read header
+
    nbr = 0;
 
-   osFRead( &in, mp3Buffer, mp3Size, &nbr );
+   osFRead( &in, mp3Buffer, MP3_FILE_BUFFER_SIZE, &nbr );
 
-   osFClose( &in );
-
-
-   bytesLeft       = mp3Size;
+   bytesLeft       = MP3_FILE_BUFFER_SIZE;
    currentMp3      = mp3Buffer;
 
    //decode first frame
@@ -194,9 +222,9 @@ int main()
 
    gfAudioConfigure( mp3FrameInfo.samprate, 1 );
 
-   printf( "Bitrate:%d\n", mp3FrameInfo.bitrate );
-   printf( "Samplerate:%d\n", mp3FrameInfo.samprate );
-   printf( "Frame size:%d\n", mp3FrameInfo.outputSamps );
+   printf( "Bitrate: %d kbps\n", mp3FrameInfo.bitrate / 1000 );
+   printf( "Samplerate: %d Hz\n", mp3FrameInfo.samprate );
+   printf( "Frame size: %d Samples\n", mp3FrameInfo.outputSamps );
 
 
    printf( "\nPlaying...\n" );
@@ -209,6 +237,18 @@ int main()
    while( bytesLeft > 0 )
    {
 
+       if( bytesLeft < 4096 )
+       {
+          nbr = readAndFillBuffer( mp3Buffer, currentMp3, MP3_FILE_BUFFER_SIZE, bytesLeft );
+
+          bytesLeft += nbr;
+          currentMp3 = mp3Buffer;
+
+          if( !nbr )
+          {
+             break;
+          }
+       }
 
        offset = MP3FindSyncWord( currentMp3, bytesLeft ) ;
 
@@ -225,6 +265,8 @@ int main()
        gfAudioPlayFifo( audioBuffer, frameSize );
 
    }
+
+   osFClose( &in );
 
    printf( "done\n" );
 

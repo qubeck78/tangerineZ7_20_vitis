@@ -182,6 +182,17 @@ uint32_t setVideoMode( uint32_t videoMode )
      con.width = 40;
    }
 
+
+   //check texmode 30 or 60 rows and adjust console height
+   if( videoMode & _VIDEOMODE_TEXT80_60_ONLY )
+   {
+      con.height = 60;
+   }
+   else
+   {
+      con.height = 30;
+   }
+
    if( videoMode & 0x10 )
    {
 
