@@ -153,15 +153,15 @@ int main()
    bspInit();
 
    screen.flags      = 0;
-   screen.width      = 320;
-   screen.height     = 240;
-   screen.rowWidth   = 512;
+   screen.width      = 640;
+   screen.height     = 480;
+   screen.rowWidth   = 1024;
    screen.buffer     = osAlloc( screen.rowWidth * screen.height * 2, OS_ALLOC_MEMF_CHIP );
 
-   setVideoMode( _VIDEOMODE_320_TEXT80_OVER_GFX );
+   setVideoMode( _VIDEOMODE_640_TEXT80_OVER_GFX );
    gfDisplayBitmap( &screen );
 
-   gfFillRect( &screen, 0, 0, 319, 239, gfColor( 0, 0, 0) );
+   gfFillRect( &screen, 0, 0, screen.width - 1, screen.height - 1, gfColor( 0, 0, 0) );
    bspDCFlush();
 
    printf( "Mandelbrot\n" );
@@ -171,7 +171,7 @@ int main()
    osFInit();
    osUIEventsInit();
 
-   ffMandelbrot( &screen, 7, -2.0f, -1.0f, 0.0085f, 0.0085f );
+   ffMandelbrot( &screen, 7, -2.0f, -1.0f, 0.00425f, 0.00425f );
 
    delayMs( 30000 );
 

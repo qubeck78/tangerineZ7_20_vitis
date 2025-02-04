@@ -21,6 +21,8 @@
 #include "shellUI.h"
 #include "objViewer.h"
 #include "modPlayer.h"
+#include "mp3Player.h"
+
 #include "fileOperations.h"
 
 extern tgfTextOverlay   con;
@@ -556,6 +558,10 @@ uint32_t viewFile( char* fileName )
    else if( strcmp( extension, ".mod" ) == 0 )
    {
       rv = mpPlay( fileName );
+   }
+   else if( strcmp( extension, ".mp3" ) == 0 )
+   {
+      rv = mp3Play( fileName );
    }
 
 

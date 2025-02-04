@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;tangerineZ7Boot/src/gfxLib/ps2host.h&apos; to &apos;ps2Host.h&apos;" description="Rename resource &apos;ps2host.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/gfxLib/ps2host.h" name="ps2Host.h" stamp="1737275951712" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;tangerineZ7Boot/src/helloworld.c&apos; to &apos;main.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="main.c" stamp="1737287693501" updateReferences="true"/>
-</session>

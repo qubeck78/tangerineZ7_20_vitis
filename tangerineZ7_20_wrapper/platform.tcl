@@ -305,3 +305,55 @@ platform clean
 platform generate
 platform clean
 platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform active {tangerineZ7_20_wrapper}
+bsp reload
+bsp reload
+platform generate -domains 
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform active {tangerineZ7_20_wrapper}
+platform config -updatehw {C:/Users/qubeck/Documents/Development/ProjektyVHDL/Zynq7020CoreBoard/tangerineZ7_20/tangerineZ7_20_wrapper.xsa}
+platform clean
+platform generate
+platform active {tangerineZ7_20_wrapper}
+domain active {zynq_fsbl}
+bsp reload
+catch {bsp regenerate}
+domain active {standalone_ps7_cortexa9_0}
+bsp reload
+catch {bsp regenerate}
+platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl 
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform generate
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate

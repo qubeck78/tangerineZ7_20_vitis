@@ -106,7 +106,7 @@ uint32_t gfAudioPlayDMA( int16_t *buffer, uint32_t length, uint32_t format, uint
    return 0;
 }
 
-uint32_t gfAudioPlayFifo( int16_t *buffer, uint32_t length )
+uint32_t gfAudioPlayFifo( int16_t *buffer, uint32_t numSamples )
 {
    uint32_t *bufferL;
    uint32_t  i;
@@ -118,9 +118,9 @@ uint32_t gfAudioPlayFifo( int16_t *buffer, uint32_t length )
 
 
    bufferL = (uint32_t*)buffer;
-   length /= 2;
+   numSamples /= 2;
 
-   for( i = 0; i < length; i++ )
+   for( i = 0; i < numSamples; i++ )
    {
       while( aud->audioFiFoStatus & 4 );   //wait if queue full
       aud->audioFiFoData = bufferL[i];

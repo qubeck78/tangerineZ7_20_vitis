@@ -79,17 +79,22 @@ typedef struct __BSP_T
     volatile uint32_t   ch0DmaRequest0PtrAdd;
     volatile uint32_t   ch0DmaRequest1PtrAdd;
 
+    volatile uint32_t   pgCursorXY;
+
 }_BSP_T;
 
 extern _BSP_T *bsp;
 
 typedef struct __PS2HOST_T
 {
-    volatile uint32_t id;
-    volatile uint32_t version;
+    volatile uint32_t   id;
+    volatile uint32_t   version;
 
     volatile uint32_t   keyboardData;
     volatile uint32_t   keyboardStatus;
+
+    volatile uint32_t   mouseData;
+    volatile uint32_t   mouseStatus;
 
 }_PS2HOST_T;
 

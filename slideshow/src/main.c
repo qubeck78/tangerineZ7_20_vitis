@@ -7,7 +7,6 @@
 #include "xil_cache.h"
 #include "xparameters.h"   /* SDK generated parameters */
 
-//#include "xsdps.h"    /* SD device driver */
 
 //
 //text mode ram     0x40000000 - 0x40001fff
@@ -137,6 +136,25 @@ uint32_t getEntry( uint32_t entryNumber )
     return 0;
 }
 
+int32_t drawBackground( tgfBitmap *bmp )
+{
+   uint32_t i;
+   uint32_t j;
+   uint32_t df;
+
+   df = bmp->height / 120;
+
+   for( i = 0; i < bmp->height; i++ )
+   {
+      j = i / df;
+      gfFillRect( bmp, 0, i, bmp->width - 1, i, gfColor( j, j / 2, j ) );
+   }
+
+   bspDCFlush();
+
+   return 0;
+}
+
 
 uint32_t slideshow()
 {
@@ -146,6 +164,9 @@ uint32_t slideshow()
     int16_t         y;
     char            extension[8];
     tosUIEvent      event;
+    uint32_t        bgRedrawCounter;
+
+    bgRedrawCounter = 0;
 
 
     do{
@@ -169,6 +190,18 @@ uint32_t slideshow()
                 if( ( strcmp( extension, ".jpg" ) == 0 ) || ( strcmp( extension, ".gbm" ) == 0 ) )
                 {
 
+                    if( !bgRedrawCounter )
+                    {
+
+                       drawBackground( &screen );
+
+                       bgRedrawCounter = 49;
+
+                    }
+                    else
+                    {
+                       bgRedrawCounter--;
+                    }
 
                     strcpy( buf, "img/" );
                     strcat( buf, dirItem.name );
@@ -290,13 +323,9 @@ uint32_t slideshow()
 }
 
 
-
 int main()
 {
-   uint32_t       i;
-   uint32_t       j;
    tosUIEvent     event;
-   int32_t        sample;
 
    //volatile       uint32_t *paletteRegs = (uint32_t*)0x45000400;
 
@@ -309,26 +338,23 @@ int main()
    screen.rowWidth   = 1024;
    screen.buffer     = osAlloc( screen.rowWidth * screen.height * 2, OS_ALLOC_MEMF_CHIP );
 
-
    setVideoMode( _VIDEOMODE_640_TEXT80_OVER_GFX );
    gfDisplayBitmap( &screen );
 
+   drawBackground( &screen );
 
-   for( i = 0; i < 480; i++ )
-   {
-      j = i / 4;
-      gfFillRect( &screen, 0, i, screen.width - 1, i, gfColor( j, j / 2, j ) );
-   }
 
-   bspDCFlush();
+   //display cursor
+   con.flags |= GF_TEXT_OVERLAY_FLAG_SHOW_CURSOR;
 
    printf( "\n" );
    printf( "        |.\\__/.|    (~\\ \n" );
    printf( "        | O O  |     ) ) \n" );
    printf( "      _.|  T   |_   ( (  \n" );
    printf( "   .-- ((---- ((-------------.\n" );
-   printf( "   | Zynq slideshow 20250127 |\n" );
+   printf( "   | Zynq slideshow 20250129 |\n" );
    printf( "   |     tangerine Z7_20     |\n" );
+//   printf( "   |     SD BOOT             |\n" );
    printf( "   |     SOC:%08x        |\n", (int)bsp->version );
    printf( "   `-------------------------`\n" );
    printf( "\n\n\n");
@@ -336,9 +362,10 @@ int main()
    osFInit();
    osUIEventsInit();
 
+   printf( ">" );
+   fflush( stdout );
 
-   i = 0;
-   j = 1;
+
    do
    {
       if( !osGetUIEvent( &event ) )
@@ -352,21 +379,23 @@ int main()
 
              if( event.arg1 == 27 )
              {
-                j = 0;
+                break;
              }
           }
       }
-   }while( j );
+   }while( 1 );
 
    //delayMs( 5000 );
 
    numDirEntries = getNumEntries();
 
+   //hide cursor
+   con.flags &= 0xffff ^ GF_TEXT_OVERLAY_FLAG_SHOW_CURSOR;
+
    if( numDirEntries )
    {
       slideshow();
    }
-
 
    cleanup_platform();
 

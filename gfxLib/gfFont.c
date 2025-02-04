@@ -1,4 +1,5 @@
 
+#include "bsp.h"
 #include "gfFont.h"
 #include "gfBitmap.h"
 #include "gfDrawing.h"
@@ -486,6 +487,19 @@ uint32_t gfDrawTextOverlay( tgfBitmap *bmp, tgfTextOverlay *textOverlay, int16_t
 	return 0;
 }
 
+static uint32_t toUpdateHWCursor( tgfTextOverlay *overlay )
+{
+   if( overlay->flags & GF_TEXT_OVERLAY_FLAG_SHOW_CURSOR )
+   {
+      bsp->pgCursorXY  = ( overlay->cursY << 8 ) | overlay->cursX;
+   }
+   else
+   {
+      bsp->pgCursorXY = 0xffff;
+   }
+
+   return 0;
+}
 
 
 uint32_t toSetCursorPos( tgfTextOverlay *overlay, uint16_t cursX, uint16_t cursY )
@@ -500,6 +514,8 @@ uint32_t toSetCursorPos( tgfTextOverlay *overlay, uint16_t cursX, uint16_t cursY
 
 		overlay->cursX = cursX;
 		overlay->cursY = cursY;
+
+		toUpdateHWCursor( overlay );
 
 	}
 	else
@@ -528,6 +544,8 @@ uint32_t toCls( tgfTextOverlay *overlay )
 
 	overlay->cursX = 0;
 	overlay->cursY = 0;
+
+	toUpdateHWCursor( overlay );
 
 	return 0;
 }
@@ -627,6 +645,8 @@ uint32_t toPrint( tgfTextOverlay *overlay, char *string )
 
 		}
 	}
+
+	toUpdateHWCursor( overlay );
 
 	return 0;
 }

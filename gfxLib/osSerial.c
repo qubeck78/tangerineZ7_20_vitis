@@ -1,20 +1,42 @@
 
 #include "osSerial.h"
 
-#ifdef _GFXLIB_RISCV_FATFS
+#ifdef _GFXLIB_ZYNQ7
+
+#include "xparameters.h"
+#include "platform_config.h"
+#include "xuartps.h"
+
+XUartPs uartZynq;
+
+//https://github.com/Xilinx/embeddedsw/blob/master/XilinxProcessorIPLib/drivers/uartps/examples/xuartps_polled_example.c
+
+#endif
+
 
 #include "bsp.h"
 
-
 extern _UART_REGISTERS_T   *uart0;
 
-#endif
+
 
 
 uint32_t osSerialOpen( uint32_t serialNum, uint32_t baudRate )
 {
 
-   return 0;
+   #ifdef _GFXLIB_ZYNQ7
+
+      XUartPs_Config *config;
+
+      config = XUartPs_LookupConfig( UART_DEVICE_ID );
+      XUartPs_CfgInitialize( &uartZynq, config, config->BaseAddress );
+      XUartPs_SetOperMode( &uartZynq, XUARTPS_OPER_MODE_NORMAL );
+
+      return 0;
+
+   #endif
+
+   return 1;
 }
 
 uint32_t osSerialClose( uint32_t serialNum )
@@ -26,6 +48,24 @@ uint32_t osSerialClose( uint32_t serialNum )
 
 int32_t  osSerialGetC( uint32_t serialNum )
 {
+
+   #ifdef _GFXLIB_ZYNQ7
+
+      uint32_t rxb;
+      uint8_t  rxBuf;
+
+      rxb = XUartPs_Recv( &uartZynq, &rxBuf, 1 );
+
+      if( rxb )
+      {
+         return rxBuf;
+      }
+      else
+      {
+         return -1;
+      }
+
+   #endif
 
    return -1;
 }
@@ -39,6 +79,14 @@ uint32_t osSerialClearRxFifo( uint32_t serialNum )
 
 uint32_t osSerialPutC( uint32_t serialNum, uint8_t c )
 {
+
+   #ifdef _GFXLIB_ZYNQ7
+
+      XUartPs_Send( &uartZynq, &c, 1 );
+
+      return 0;
+
+   #endif
 
    return 1;
 

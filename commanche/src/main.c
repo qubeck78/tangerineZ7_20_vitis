@@ -33,7 +33,7 @@ struct
       float angle;   // direction of the camera
       int16_t horizon; // horizon position (look up and down)
       float distance; // distance of map
-} camera = { 256, 256, 40, 0.1, 50, 150 };
+} camera = { 256, 256, 40, 0.1, 40, 150 };
 
 char buf[128];
 
@@ -102,19 +102,19 @@ uint32_t commanche( tgfBitmap *screen )
 {
 
    uint32_t screenwidth = 320;
-   float    screenwidthf = screenwidth;
+   //float    screenwidthf = screenwidth;
 
-   uint32_t screenheight = 200;
+   uint32_t screenheight = 240;
 
    uint32_t mapwidthperiod = 512 - 1;
    uint32_t mapheightperiod = 512 - 1;
    uint32_t mapshift = 9;
    int32_t  mapoffset;
-   float    deltaz = 1.5f;
-   int16_t  y;
+   float    deltaz = 1.0f;   //1.5f
+   //int16_t  y;
    int16_t  x;
    float    z;
-   float    invz;
+   //float    invz;
    int16_t  heightonscreen;
    uint16_t color;
    int32_t  cameraoffs;
@@ -127,8 +127,8 @@ uint32_t commanche( tgfBitmap *screen )
    float    dx;
    float    dy;
 
-   int16_t  bw;
-   int16_t  bh;
+   //int16_t  bw;
+   //int16_t  bh;
 
    int32_t  linvz;
    int16_t  hiddeny[ 320 ];
@@ -237,7 +237,7 @@ uint32_t commanche( tgfBitmap *screen )
       }
 
 
-      deltaz += 0.00125f;
+      deltaz += 0.00250f;
 
    }
 
@@ -329,6 +329,8 @@ int main()
 
    keyStatus = 0;
 
+   bspDCFlush();
+
    do
    {
       animLeds( i++ );
@@ -366,9 +368,13 @@ int main()
 
                case _KEYCODE_PGUP:
 
+                  keyStatus |= 16;
+
                   break;
 
                case _KEYCODE_PGDOWN:
+
+                  keyStatus |= 32;
 
                   break;
 
@@ -405,6 +411,18 @@ int main()
                   keyStatus &= 8 ^ 0xffffffff;
 
                break;
+
+               case _KEYCODE_PGUP:
+
+                  keyStatus &= 16 ^ 0xffffffff;
+
+                  break;
+
+               case _KEYCODE_PGDOWN:
+
+                  keyStatus &= 32 ^ 0xffffffff;
+
+                  break;
             }
          }
       }
@@ -416,7 +434,8 @@ int main()
          //left
          camera.angle += 0.1;
 
-      }else if( keyStatus & 4 )
+      }
+      else if( keyStatus & 4 )
       {
          //right
          camera.angle -= 0.1;
@@ -428,7 +447,8 @@ int main()
          //up
          camera.height += 1;
 
-      }else if( keyStatus & 2 )
+      }
+      else if( keyStatus & 2 )
       {
          //down
 
@@ -439,16 +459,42 @@ int main()
 
       }
 
+      if( keyStatus & 16 )
+      {
+         camera.horizon += 1;
+      }
+      else if( keyStatus & 32 )
+      {
+         if( camera.horizon > 0 )
+         {
+            camera.horizon -= 1;
+         }
+      }
+
+
       camera.x -= (float)sin( camera.angle ) * 1.1f;
       camera.y -= (float)cos( camera.angle ) * 1.1f;
 
 
-      commanche( &screen2 );
+      if( i & 1 )
+      {
+         gfDisplayBitmap( &screen2 );
 
-      //do{}while( ! bsp->videoVSync );
+         do{}while( ! bsp->videoVSync );
 
-      z7FastBlit( &screen1, &screen2 );
-      bspDCFlush();
+         commanche( &screen1 );
+         bspDCFlush();
+      }
+      else
+      {
+
+         gfDisplayBitmap( &screen1 );
+
+         do{}while( ! bsp->videoVSync );
+
+         commanche( &screen2 );
+         bspDCFlush();
+      }
 
 
    }while( 1 );
