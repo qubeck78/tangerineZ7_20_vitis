@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="ASCII"?>
-<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="fractal" location="C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/fractal" platform="C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/tangerineZ7_20_wrapper.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="tangerineZ7_fractal_system" sysConfig="tangerineZ7_20_wrapper" runtime="C/C++" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="65dcdf29b5d86a1fcf3341a73030a990">
-  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1695128132">
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="fractal" location="C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7_20/fractal" platform="C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7_20/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/tangerineZ7_20_wrapper.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="fractal_system" sysConfig="tangerineZ7_20_wrapper" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="80316d467281bc71e6f97b13aa7eabac">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1485319050">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
     <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
-  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1714606251" dirty="true">
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.2036126355" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
-  <template appTemplateName="hello_world"/>
+  <template appTemplateName="empty_application"/>
 </sdkproject:SdkProject>
