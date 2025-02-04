@@ -7,7 +7,6 @@
 #include "xil_cache.h"
 #include "xparameters.h"   /* SDK generated parameters */
 
-//#include "xsdps.h"    /* SD device driver */
 
 //
 //text mode ram     0x40000000 - 0x40001fff
@@ -169,6 +168,7 @@ uint32_t slideshow()
 
     bgRedrawCounter = 0;
 
+
     do{
 
         getEntry( randomNumber() % numDirEntries );
@@ -195,7 +195,7 @@ uint32_t slideshow()
 
                        drawBackground( &screen );
 
-                       bgRedrawCounter = 19;
+                       bgRedrawCounter = 49;
 
                     }
                     else

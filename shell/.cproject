@@ -65,6 +65,10 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;C:\Users\qubeck\Documents\Development\ProjektyVitis\TangerineZ7Workspace\gfxLib&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/libHelix}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/libHelix/pub}&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
                                     								
                                 </option>

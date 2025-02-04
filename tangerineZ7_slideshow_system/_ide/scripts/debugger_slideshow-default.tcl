@@ -13,7 +13,7 @@ connect -url tcp:127.0.0.1:3121
 targets -set -nocase -filter {name =~"APU*"}
 rst -system
 after 3000
-targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-4ba00477-0"}
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001510415d01" && level==0 && jtag_device_ctx=="jsn-DLC10-00001510415d01-23727093-0"}
 fpga -file C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/slideshow/_ide/bitstream/tangerineZ7_20_wrapper.bit
 targets -set -nocase -filter {name =~"APU*"}
 loadhw -hw C:/Users/qubeck/Documents/Development/ProjektyVitis/TangerineZ7Workspace/tangerineZ7_20_wrapper/export/tangerineZ7_20_wrapper/hw/tangerineZ7_20_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs

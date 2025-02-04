@@ -1,7 +1,7 @@
 #ifndef _MODPLAYER_H
 #define _MODPLAYER_H
 
-#include "../gfxLib/gftypes.h"
+#include "gftypes.h"
 
 
 uint32_t mpInit( void );

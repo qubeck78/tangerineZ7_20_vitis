@@ -57,16 +57,17 @@ uint32_t bspInit()
    con.type                = GF_TEXT_OVERLAY_TYPE_HARDWARE;
    con.flags               = 0;
    con.width               = 80;               //clear whole buffer
-   con.height              = 30;
+   con.height              = 60;
    con.cursX               = 0;
    con.cursY               = 0;
    con.textAttributes      = 0x0f;
    con.font                = NULL;
    con.textBuffer          = (uint8_t*) 0x40000000;
 
-   con.textAttributes   = 0x0f;
    toCls( &con );
+
    con.textAttributes   = 0x8f;
+   con.height           = 30;
 
    //init alloc mechanism, use last 64MB of DDR3 memory
    
@@ -173,7 +174,7 @@ uint32_t setVideoMode( uint32_t videoMode )
    bsp->videoMuxMode = videoMode;
 
    //check textmode: 40 or 80 column and adjust console width
-   if( videoMode & _VIDEOMODE_TEXT80_ONLY )
+   if( ( ( videoMode >> 2) & 3 ) == 1 )
    {
      con.width = 80;
    }
@@ -184,7 +185,7 @@ uint32_t setVideoMode( uint32_t videoMode )
 
 
    //check texmode 30 or 60 rows and adjust console height
-   if( videoMode & _VIDEOMODE_TEXT80_60_ONLY )
+   if( ( ( videoMode >> 2 ) & 3 ) == 3 )
    {
       con.height = 60;
    }

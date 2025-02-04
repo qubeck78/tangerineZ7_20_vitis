@@ -905,30 +905,20 @@ int objvView( char* fileName )
 
    bsp->frameTimer = 0;
 
+   bspDCFlush();
+
    do
    {
-      objvDisplayObj( &screen2 );
-      do{}while( ! bsp->videoVSync );
-
-      #ifdef _GFXLIB_ZYNQ7
-
-         z7FastBlit( &screen, &screen2 );
-         bspDCFlush();
-
-      #else
-
-         gfBlitBitmap( &screen, &screen2, 0, 0 );
-
-      #endif
 
       rotation = (int)bsp->frameTimer;
 
-/*      gfDisplayBitmap( &screen2 );
+      gfDisplayBitmap( &screen2 );
       do{}while( ! bsp->videoVSync );
 
       rotation = (int)bsp->frameTimer;    
 
       objvDisplayObj( &screen );
+      bspDCFlush();
 
 
       gfDisplayBitmap( &screen );
@@ -937,7 +927,8 @@ int objvView( char* fileName )
       rotation = (int)bsp->frameTimer;    
 
       objvDisplayObj( &screen2 );    
-*/
+      bspDCFlush();
+
       
       while( !osGetUIEvent( &event ) )
       {

@@ -18,8 +18,6 @@
 #include "gfFont.h"
 #include "osUIEvents.h"
 #include "gfAudio.h"
-
-
 #include "shellUI.h"
 
 
@@ -79,7 +77,7 @@ uint32_t mpPlay( char *fileName )
    uint32_t    nbr;
    uint32_t    audioDmaStatus;
    uint32_t    quitPlayer;
-   char        buf[60];
+   char        buf[80];
    uint32_t    i;
    uint32_t    j;
 
