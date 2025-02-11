@@ -169,6 +169,16 @@
 /******************************************************************/
 
 
+/* Peripheral Definitions for peripheral IS2CONTROLLER_0 */
+#define XPAR_IS2CONTROLLER_0_BASEADDR 0x44000000
+#define XPAR_IS2CONTROLLER_0_HIGHADDR 0x44000FFF
+
+
+/* Peripheral Definitions for peripheral PS2HOST_0 */
+#define XPAR_PS2HOST_0_BASEADDR 0x43000000
+#define XPAR_PS2HOST_0_HIGHADDR 0x43000FFF
+
+
 /* Peripheral Definitions for peripheral PS7_AFI_0 */
 #define XPAR_PS7_AFI_0_S_AXI_BASEADDR 0xF8008000
 #define XPAR_PS7_AFI_0_S_AXI_HIGHADDR 0xF8008FFF
@@ -259,16 +269,6 @@
 /* Peripheral Definitions for peripheral TANGERINE_0 */
 #define XPAR_TANGERINE_0_BASEADDR 0x45000000
 #define XPAR_TANGERINE_0_HIGHADDR 0x45000FFF
-
-
-/* Peripheral Definitions for peripheral PS2HOST_0 */
-#define XPAR_PS2HOST_0_BASEADDR 0x43000000
-#define XPAR_PS2HOST_0_HIGHADDR 0x43000FFF
-
-
-/* Peripheral Definitions for peripheral IS2CONTROLLER_0 */
-#define XPAR_IS2CONTROLLER_0_BASEADDR 0x44000000
-#define XPAR_IS2CONTROLLER_0_HIGHADDR 0x44000FFF
 
 
 /******************************************************************/
